@@ -75,14 +75,13 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myblog',  # 数据库名字
-        'USER': 'root',  # 账号
-        'PASSWORD': 'root',  # 密码
-        'HOST': '127.0.0.1',  # IP
-        'PORT': '3306',  # 端口
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'zjmblog',
+        'USER': 'postgres',
+        'PASSWORD': 'redhat',
+        'HOST': '127.0.0.1',
+        'PORT': 5432,
     }
 }
 
